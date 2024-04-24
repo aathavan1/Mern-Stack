@@ -1,11 +1,13 @@
 const fs=require("fs");
-fs.writeFile("k.txt","helloworld",(error)=>{
+fs.appendFile("Aathav.txt","helloworld \n",(error)=>{
     if(error) throw error;
 
     console.log("sucess");
 })
-fs.readFile("k.txt","hex",(error,data)=>{
+
+
+fs.readFile("Aathav.txt",(error,data)=>{
 
     if(error) throw error;
-    console.log(data);
+    console.log(data.toString());
 })
