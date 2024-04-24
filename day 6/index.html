@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+text-align: center;
+border-color: transparent;
+box-shadow:10cap;
+margin-left: 30%;
+padding-top: 5%;
+margin-top: 10%;
+width: 50%;
+height: 300px;
+backdrop-filter:blur(2px);
+border-radius: 10%;
+box-shadow: 0 0 25px rgb(5, 224, 224),0 0 50px aqua;
+    }
+    input{
+        border-radius: 5px solid black;
+        border-top: transparent;
+        border-bottom: 3px solid black;
+        border-right: transparent;
+        border-left: transparent;
+        border-radius: 8px;
+        margin-top: 30px;
+        background-color: rgba(251, 253, 255,0.4);
+        border-bottom-color: black;
+        background-color: transparent;
+        color: rgb(255, 0, 51), 22, 45);
+    }
+    ::placeholder
+    {
+        color: rgb(255, 0, 212);
+        font-size: 15px;
+    }
+    h1{
+        color: silver;
+    }
+    button{
+        margin-top: 30px;
+        background-color: rgba(236, 145, 85, 0.5);
+        color: aliceblue;
+        border-radius: 25px;
+    }
+    button:hover
+    {
+        box-shadow: 0 0 25px palegreen,0 0 50px palegreen;
+        padding: 5px;
+    }
+    button:active{
+        transform: scaleY(1.2);
+    }
+    body{
+        background-image: url(px1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    p{
+        
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+        color: chartreuse;
+
+    }
+</style>
+<body>
+    <div >
+        <h1>login</h1>
+        <input type="email" placeholder="E-mail" id="em" name="email"><br>
+        <input type="password" placeholder="Password" id="pass"><br>
+        <button type="submit" onclick="fo();" >SUBMIT</button>
+    </div>
+</body>
+<script>
+    function fo(){
+    var m=document.getElementById("em").value;
+    var p=document.getElementById("pass").value;
+    if(m==="designzia"&&p==="Csd")
+    {
+        window.open("https://docs.google.com/spreadsheets/d/1BFbhpvOrw-6LGGjzlLKOkNTmkxMs0lI5MllT2Ru-FNM/edit?usp=drivesdk");
+    }
+    else if(m==="anvar"&&p==="Basha")
+    {
+        window.open("https://docs.google.com/spreadsheets/d/1BFbhpvOrw-6LGGjzlLKOkNTmkxMs0lI5MllT2Ru-FNM/edit?usp=drivesdk");
+    }
+    else if(m==="elango"&&p==="Elango@123")
+    {
+        window.open("https://docs.google.com/spreadsheets/d/1BFbhpvOrw-6LGGjzlLKOkNTmkxMs0lI5MllT2Ru-FNM/edit?usp=drivesdk");
+    }
+    else if(m==="Aathav"&&p==="divi")
+    {
+        window.open("https://docs.google.com/spreadsheets/d/1BFbhpvOrw-6LGGjzlLKOkNTmkxMs0lI5MllT2Ru-FNM/edit?usp=drivesdk");
+    }
+    else{
+        window.open("https://eseccsd.in/");
+        
+    
+
+    }
+em.value='';
+pass.value='';
+}
+    </script>
+</html>
