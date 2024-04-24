@@ -1,6 +1,9 @@
 import http from "http";
 import url from "url";
 import fs from "fs";
+
+
+
 const server=http.createServer((req,res)=>
 {
     const urlp=url.parse(req.url,true);
@@ -30,8 +33,11 @@ const server=http.createServer((req,res)=>
         res.writeHead(404,{"content-type":"error"})
         res.end("<h1>404 error </h1>");
     }
-});
-server.listen(5000,()=>
+})
+
+
+
+server.listen(3001,()=>
 {
-    console.log("server running at port 5000");
+    console.log("server running at port 3001");
 })

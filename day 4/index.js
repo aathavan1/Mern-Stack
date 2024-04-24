@@ -4,7 +4,7 @@ import fs from "fs";
 iq
   .prompt([
     {
-        message:"enter url",
+        message:"Enter url",
         name:"URL",
     }
   ])
@@ -12,7 +12,7 @@ iq
     // Use user feedback for... whatever!!
     const ul=answers.URL;
     var qi=qr.image(ul,{type:'png'});
-    qi.pipe(fs.createWriteStream("qrl.png"));
+    qi.pipe(fs.createWriteStream(ul+".png"));
   })
   .catch((error) => {
     if (error.isTtyError) {
