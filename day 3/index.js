@@ -1,5 +1,9 @@
 const fs=require("fs");
-fs.appendFile("Aathav.txt","helloworld \n",(error)=>{
+const generateName = require('sillyname');
+
+var sillyName = generateName();
+
+fs.appendFile("Aathav.txt",sillyName+"\n",(error)=>{
     if(error) throw error;
 
     console.log("sucess");
